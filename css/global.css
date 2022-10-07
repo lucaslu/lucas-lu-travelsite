@@ -1,0 +1,49 @@
+.title, .header__logo {
+  color: #335576;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+}
+.header__logo {
+  text-decoration: none;
+  padding-left: 2rem;
+}
+.header__nav {
+  width: 40%;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+.header__menu-item-link {
+  text-decoration: none;
+  color: #335576;
+  padding-bottom: 0.3rem;
+}
+.header__menu-item-link--active {
+  border-bottom: 0.2rem solid #db7a4e;
+}/*# sourceMappingURL=global.css.map */

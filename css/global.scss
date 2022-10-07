@@ -1,0 +1,61 @@
+@use "./partials/variables";
+@use "./partials/mixins";
+
+// EXTENSIONS
+.title {
+  color: variables.$primary-color;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  font-family: variables.$primary-font;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// Header section
+.header {
+  position: fixed;
+  top: 0;
+  @include mixins.flexed(space-between);
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  width: 100%;
+  background-color: variables.$white;
+
+  &__logo {
+    @extend .title;
+    text-decoration: none;
+    padding-left: 2rem;
+  }
+
+  &__nav {
+    width: 40%;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
+
+  &__menu-item-link {
+    text-decoration: none;
+    color: variables.$primary-color;
+    padding-bottom: 0.3rem;
+
+    &--active {
+      border-bottom: 0.2rem solid variables.$secondary-color;
+    }
+  }
+}
