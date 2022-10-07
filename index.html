@@ -9,9 +9,10 @@
     <title>Travel Site</title>
   </head>
   <body>
-    <!-- nav bar section -->
+    <!-- header section -->
     <header class="header">
       <a class="header__logo" href="./index.html">Travel Site</a>
+      <!-- nav bar section -->
       <nav class="header__nav">
         <ul class="header__menu">
           <li class="header__menu-item">
@@ -38,18 +39,34 @@
     <main class="main-content">
       <!-- hero section -->
       <section class="hero">
-        <h1>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
-          esse saepe vero cupiditate iusto est pariatur, adipisci laborum
-          nostrum tempore cum? Ipsam iure unde incidunt, corrupti quam
-          praesentium iste deleniti!
-        </h1>
-        <h1>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
-          esse saepe vero cupiditate iusto est pariatur, adipisci laborum
-          nostrum tempore cum? Ipsam iure unde incidunt, corrupti quam
-          praesentium iste deleniti!
-        </h1>
+        <div class="hero__left">
+          <h2 class="hero__title">Traveling Comes With Endless Discoveries</h2>
+          <p class="hero__content">
+            Don't let your dreams be just dreams. Experience the world by
+            booking a vacation with us now.
+          </p>
+          <div class="button">
+            <a class="button__link" href="#">Get started</a>
+          </div>
+        </div>
+        <div class="hero__right">
+          <img class="hero__image" src="./assets/images/hero.png" alt="hero" />
+        </div>
+      </section>
+      <!-- recommendations section -->
+      <section class="recommendation">
+        <h2 class="recommendation__title">Recommendations</h2>
+        <div class="recommendation__cards">
+          <article class="card card__background card__background--hawaii">
+            <p>Hawaii</p>
+          </article>
+          <article class="card card__background card__background--iceland">
+            <p>Iceland</p>
+          </article>
+          <article class="card card__background card__background--greece">
+            <p>Greece</p>
+          </article>
+        </div>
       </section>
     </main>
 

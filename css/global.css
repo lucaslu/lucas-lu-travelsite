@@ -1,9 +1,3 @@
-.title, .header__logo {
-  color: #335576;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
 html,
 body {
   box-sizing: border-box;
@@ -28,6 +22,9 @@ body {
   background-color: #ffffff;
 }
 .header__logo {
+  color: #335576;
+  font-size: 1.5rem;
+  font-weight: 700;
   text-decoration: none;
   padding-left: 2rem;
 }
@@ -46,4 +43,28 @@ body {
 }
 .header__menu-item-link--active {
   border-bottom: 0.2rem solid #db7a4e;
+}
+
+.card {
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+  width: 20rem;
+  border: 0.0625rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+}
+.card__background {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 2rem;
+}
+.card__background--hawaii {
+  background-image: url(../assets/images/hawaii.jpg);
+}
+.card__background--iceland {
+  background-image: url(../assets/images/iceland.jpg);
+}
+.card__background--greece {
+  background-image: url(../assets/images/greece.jpg);
 }/*# sourceMappingURL=global.css.map */

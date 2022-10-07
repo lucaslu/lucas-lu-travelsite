@@ -1,0 +1,60 @@
+@use "./partials/variables";
+@use "./partials/mixins";
+
+// hero section
+.hero {
+  @include mixins.flexed();
+  background-color: variables.$background-color;
+  padding-left: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+
+  &__left {
+    flex: 50%;
+  }
+
+  &__title {
+    @include mixins.title(variables.$primary-color, 2.5rem);
+  }
+
+  &__content {
+    color: variables.$primary-color;
+    padding-bottom: 1rem;
+  }
+
+  &__right {
+    flex: 50%;
+  }
+
+  &__image {
+    width: 30rem;
+    padding-left: 2rem;
+  }
+}
+
+.button {
+  &__link {
+    background-color: variables.$secondary-color;
+    color: variables.$white;
+    text-decoration: none;
+    padding: 0.5rem 3rem;
+    border-radius: 1rem;
+  }
+}
+
+// recommendations section
+.recommendation {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+
+  &__title {
+    @include mixins.title(variables.$primary-color);
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  &__cards {
+    @include mixins.flexed(space-evenly);
+    @include mixins.title(variables.$white);
+  }
+}

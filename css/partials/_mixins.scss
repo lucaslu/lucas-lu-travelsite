@@ -3,3 +3,9 @@
   justify-content: $justify;
   align-items: $align;
 }
+
+@mixin title($color, $size: 1.5rem, $weight: 700) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+}
