@@ -45,7 +45,7 @@
 // recommendations section
 .recommendation {
   padding-top: 2rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 
   &__title {
     @include mixins.title(variables.$primary-color);

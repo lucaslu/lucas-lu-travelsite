@@ -19,8 +19,8 @@ body {
 .header {
   position: fixed;
   top: 0;
-  @include mixins.flexed(space-between);
   width: 100%;
+  @include mixins.flexed(space-between);
   background-color: variables.$white;
 
   &__logo {
@@ -54,8 +54,8 @@ body {
 .card {
   background-position: center;
   background-size: cover;
-  height: 30rem;
   width: 20rem;
+  height: 30rem;
   border: 0.0625rem solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
 
@@ -74,5 +74,53 @@ body {
     &--greece {
       background-image: url(../assets/images/greece.jpg);
     }
+  }
+}
+
+// Footer section
+.footer {
+  @include mixins.flexed(space-around, flex-start);
+  background-color: variables.$background-color;
+  padding-top: 2rem;
+
+  &__title {
+    @include mixins.title(variables.$primary-color);
+  }
+
+  &__subtitle {
+    color: variables.$secondary-color;
+    font-size: 0.75rem;
+    font-weight: 500;
+
+    &--email {
+      padding-top: 0.8rem;
+    }
+  }
+
+  &__text {
+    color: variables.$primary-color;
+  }
+
+  &__hours-container {
+    @include mixins.flexed(space-around);
+    gap: 4rem;
+  }
+
+  &__social {
+    width: 10rem;
+  }
+}
+
+// Icon
+.icon {
+  width: 2rem;
+
+  &__container {
+    @include mixins.flexed(space-between, flex-end);
+    padding-top: 1rem;
+  }
+  &__facebook {
+    width: 1rem;
+    height: 2rem;
   }
 }

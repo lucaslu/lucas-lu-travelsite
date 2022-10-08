@@ -15,10 +15,10 @@ body {
 .header {
   position: fixed;
   top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   background-color: #ffffff;
 }
 .header__logo {
@@ -48,8 +48,8 @@ body {
 .card {
   background-position: center;
   background-size: cover;
-  height: 30rem;
   width: 20rem;
+  height: 30rem;
   border: 0.0625rem solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
 }
@@ -67,4 +67,51 @@ body {
 }
 .card__background--greece {
   background-image: url(../assets/images/greece.jpg);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #fefaf5;
+  padding-top: 2rem;
+}
+.footer__title {
+  color: #335576;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.footer__subtitle {
+  color: #db7a4e;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.footer__subtitle--email {
+  padding-top: 0.8rem;
+}
+.footer__text {
+  color: #335576;
+}
+.footer__hours-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4rem;
+}
+.footer__social {
+  width: 10rem;
+}
+
+.icon {
+  width: 2rem;
+}
+.icon__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 1rem;
+}
+.icon__facebook {
+  width: 1rem;
+  height: 2rem;
 }/*# sourceMappingURL=global.css.map */
