@@ -59,6 +59,11 @@ body {
   border: 0.0625rem solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
 
+  &__recommendation-link {
+    @include mixins.title(variables.$white);
+    text-decoration: none;
+  }
+
   &__background {
     @include mixins.flexed(flex-end, flex-end);
     padding-right: 2rem;
@@ -82,6 +87,7 @@ body {
   @include mixins.flexed(space-around, flex-start);
   background-color: variables.$background-color;
   padding-top: 2rem;
+  padding-bottom: 2rem;
 
   &__title {
     @include mixins.title(variables.$primary-color);
@@ -102,7 +108,7 @@ body {
   }
 
   &__hours-container {
-    @include mixins.flexed(space-around);
+    @include mixins.flexed(space-around, flex-start);
     gap: 4rem;
   }
 

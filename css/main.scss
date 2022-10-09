@@ -1,7 +1,7 @@
 @use "./partials/variables";
 @use "./partials/mixins";
 
-// hero section
+// Hero section
 .hero {
   @include mixins.flexed();
   background-color: variables.$background-color;
@@ -42,7 +42,7 @@
   }
 }
 
-// recommendations section
+// Recommendations section
 .recommendation {
   padding-top: 2rem;
   padding-bottom: 5rem;
@@ -55,6 +55,5 @@
 
   &__cards {
     @include mixins.flexed(space-evenly);
-    @include mixins.title(variables.$white);
   }
 }

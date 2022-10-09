@@ -53,6 +53,12 @@ body {
   border: 0.0625rem solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
 }
+.card__recommendation-link {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
 .card__background {
   display: flex;
   justify-content: flex-end;
@@ -75,6 +81,7 @@ body {
   align-items: flex-start;
   background-color: #fefaf5;
   padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .footer__title {
   color: #335576;
@@ -95,7 +102,7 @@ body {
 .footer__hours-container {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   gap: 4rem;
 }
 .footer__social {

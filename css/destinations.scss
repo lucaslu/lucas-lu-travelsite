@@ -1,0 +1,58 @@
+@use "../css/partials/variables";
+@use "../css/partials/mixins";
+
+// Itineraries section
+.itinerary {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-position: center;
+  background-size: cover;
+
+  &__title {
+    @include mixins.title(variables.$white, 4rem);
+    padding-left: 2rem;
+  }
+
+  &__cards {
+    @include mixins.flexed();
+    gap: 2rem;
+  }
+
+  &__card {
+    background-color: variables.$white;
+    width: 15rem;
+    height: 25rem;
+  }
+
+  &__card-title {
+    text-align: center;
+    border-bottom: 0.2rem solid black;
+    margin: 1rem;
+  }
+
+  &--hawaii {
+    background-image: url(../assets/images/hawaii.jpg);
+  }
+
+  &--iceland {
+    background-image: url(../assets/images/iceland.jpg);
+  }
+
+  &--greece {
+    background-image: url(../assets/images/greece.jpg);
+  }
+}
+
+// Itinerary List
+.itinerary-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0.5rem 1rem;
+
+  &__item {
+    background-color: variables.$background-color;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+  }
+}
